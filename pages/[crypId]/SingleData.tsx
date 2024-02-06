@@ -9,7 +9,7 @@ const SingleData = ({ id }: any) => {
 
   return (
     <Container sx={{padding : "20px"}}>
-      {isLoading && <SingleDataTable data={data.data}/>}
+      {!isLoading && <SingleDataTable data={data}/>}
     </Container>
   )
 };
